@@ -5,13 +5,14 @@
 }
 .container{
     display: flex;
+    height: 95vh;
     justify-content: space-around;
     background-image: url('img/tokyo.jpg');
 }
 .prority-box{
   width: 30vw;
-  height: 100vh;
-
+  height: 95vh;
+ 
 }
 
 .prority-box h1{
@@ -26,19 +27,56 @@
 /*Card*/
 
 .card-low{
-    width: 200px;
+    width: 90%;
     color: #fff;
     background-color: 	#07182E;
      border-radius: 20px;
+     margin-top: 20px;
      padding: 10px;
 }
 
+/*Prioridad baja*/
 .card-low:hover{
     background-color: green;
 }
 
 .card-border-low{
     border: 3px solid green;
+}
+/*Prioridad media*/
+
+.card-medium{
+    width: 90%;
+    color: #fff;
+    background-color: 	#07182E;
+    margin-top: 20px;
+     border-radius: 20px;
+     padding: 10px;
+}
+.card-medium:hover{
+    background-color: orange;
+}
+
+.card-border-medium{
+    border: 3px solid orange;
+}
+
+/*Prioridad alta*/
+
+.card-high{
+    width: 90%;
+    color: #fff;
+    background-color: 	#07182E;
+    margin-top: 20px;
+     border-radius: 20px;
+     padding: 10px;
+}
+.card-high:hover{
+    background-color: red;
+}
+
+.card-border-high{
+    border: 3px solid red;
 }
 
 .card-name{
@@ -62,5 +100,24 @@
 .task-check{
     margin-top:5px;
     text-align: end;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+.footer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: black;
+    color:#fff;
+    list-style: none;
+    font-weight: bold;
 }
 
