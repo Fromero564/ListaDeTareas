@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('img/tokyo.jpg');
+}
+.prority-box{
+  width: 30vw;
+  height: 100vh;
+
+}
+
+.prority-box h1{
+    width: 100%;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: azure;
+    text-align: center;
+}
+
+/*Card*/
+
+.card-low{
+    width: 200px;
+    color: #fff;
+    background-color: 	#07182E;
+     border-radius: 20px;
+     padding: 10px;
+}
+
+.card-low:hover{
+    background-color: green;
+}
+
+.card-border-low{
+    border: 3px solid green;
+}
+
+.card-name{
+    width: 100%;
+ 
+    text-align: center;
+   
+}
+
+.card-state{
+    text-align: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.description{
+    font-weight: bold;
+    text-align: start;
+}
+
+.task-check{
+    margin-top:5px;
+    text-align: end;
+}
+
