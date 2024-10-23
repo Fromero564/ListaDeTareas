@@ -134,4 +134,7 @@ footer{
     form {
         width: 90%; 
     }
+    .footer-page {
+        width: 90%;
+    }
 }
