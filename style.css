@@ -3,15 +3,51 @@
     margin: 0;
     box-sizing: content-box;
 }
+
+body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+        background-image: url('img/tokyo.jpg');
+
+}
+
+
+/*Navbar*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+.navbar{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    color:#fff;
+    list-style: none;
+    font-weight: bold;
+}
+.navbar li:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+}
+
+
 .container{
     display: flex;
-    height: 95vh;
-    justify-content: space-around;
-    background-image: url('img/tokyo.jpg');
+    justify-content: center;
+    flex-grow: 1; 
 }
 .prority-box{
   width: 30vw;
-  height: 95vh;
+  height: auto;
  
 }
 
@@ -109,7 +145,7 @@ footer{
     justify-content: center;
     background-color: #000;
 }
-.footer{
+.footer-page{
     width: 30%;
     display: flex;
     align-items: center;
@@ -121,3 +157,63 @@ footer{
     font-weight: bold;
 }
 
+.footer-page li:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .prority-box {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 880px) {
+    .navbar {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .navbar li {
+        padding: 15px 0;
+    }
+    .container {
+        flex-direction: column; 
+        align-items: center;   
+    }
+
+    .prority-box {
+        width: 80vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .navbar li {
+        padding: 15px 0;
+    }
+    
+
+    .container {
+        align-items: center;
+        justify-content: center; 
+        margin-top: 20px;
+    }
+
+
+    .footer-page {
+        width: 90%;
+    }
+
+    .prority-box {
+        width: 100%; 
+        padding: 10px;
+    }
+}

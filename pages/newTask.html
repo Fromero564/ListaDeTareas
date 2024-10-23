@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newTask.css">
+     
+    <!--Fuente de Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="./finishTask.html">Tareas completadas</a></li>
+                <li><a href="#">Nueva Tarea</a></li>
+                <li>Configuraciones</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="" method="post">
+            <label for="task"> Nombre de la tarea</label>
+            <input type="text" name="task" >
+            <label for="start-date"> Fecha de inicio:</label>
+            <input type="date" name="start-date" >
+            <label for="finish-date"> Fecha de fin:</label>
+            <input type="date" name="finish-date" >
+            <label for="description">Descripción:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="priority">Prioridad:</label>
+            <select name="priority" id="">
+                <option value="1">Baja</option>
+                <option value="1">Media</option>
+                <option value="1">Alta</option>
+            </select>
+            <button type="submit">Cargar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul class="footer-page"> 
+            <li>Ajustes</li>
+            <li>Ayuda</li>
+            <li>Contacto</li>
+        </ul>
+       </footer>
+</body>
+</html>
